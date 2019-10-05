@@ -1,0 +1,52 @@
+
+  #container{
+      margin:5px auto;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 10% auto;
+      grid-template-rows: 60px 300px;
+      grid-template-areas: "sidebar bs"
+                           "sidebar main"; 
+  }
+  
+  #buscador{
+    background-color:#e5e5e5;
+    grid-area: bs;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+  }
+
+  #buscar{
+    margin:0 10px;
+  }
+
+  #email{
+    margin:0 10px;
+  }
+
+  #barra{
+    padding-top: 10px;
+    background-color:#333;
+    grid-area: sidebar;
+    color:white;
+    text-align: center;
+  }
+
+  #principal{
+    background-color:white;
+    grid-area: main;
+    border-style: solid;
+    border-width: 3px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  h3{
+    text-align: center;
+  }
+
